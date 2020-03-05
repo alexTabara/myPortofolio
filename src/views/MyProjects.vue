@@ -1,7 +1,7 @@
 <template>
-    <div class="project padding">
-       <div class="row section-project">
-           <div class="section-project__title mx-0 pl-0 pr-3">
+    <div class="project">
+       <div class="row section-project mx-auto mt-5">
+           <div class="section-project__title mx-0  pr-3">
                <span class="pr-3 ">03.</span>Some Things I've Build
            </div>
            <div class="col section-project__img">
@@ -15,6 +15,14 @@
                <div><i class="fab fa-github mx-5"></i><i class="fas fa-external-link-alt pr-3"></i></div>
            </div>
        </div>
+        <div class="row section-contact mx-auto">
+            <div class="col section-contact__title mx-0  pr-3">
+                <span class="pr-3 ">04. What's Next?</span>
+                <p>Get In Touch</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto atque consectetur culpa, eius, est ex id illo inventore ipsam libero officiis optio perspiciatis porro possimus quia voluptatibus? Dignissimos, fugit!</p>
+                <div class="btn">Say Hello</div>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -22,16 +30,26 @@
 <style scoped lang="scss">
     $main-text-color: #64C7CC;
     $main-bg-color: rgb(10, 25, 47);
-
+    $secondary-text-color: rgb(136, 146, 176);
+    $third-text-color: #f7f7f7;
     @media only screen and (min-width: 576px) {
     }
     @media only screen and (max-width: 575px) {
     }
 
     .project{
-        .row{
+        .section-project{
             position: relative;
             padding-top: 50px;
+            .section-project__title{
+                position: absolute;
+                top: -17px;
+                left: 0;
+                background: $main-bg-color;
+                z-index: 5;
+                font-size: 22px;
+                color: white;
+            }
             .section-project__img:hover .img-overlay{
                 display: none;
             }

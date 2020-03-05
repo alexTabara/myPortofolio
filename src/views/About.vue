@@ -9,13 +9,14 @@
       </div>
       <transition name="bounce">
         <div class="col-sm-5 pt-4" :class="{'bounceInRight animated': animated}" @animationend="animated = false">
-          <h5>{{macarie[current]}}</h5>
-          <h6>{{perioada[current]}}</h6>
+          <h5 class="third-text-color">{{macarie[current]}} <span>@ {{stuff[current]}}</span></h5>
+          <h6 class="secondary-text-color">{{perioada[current]}}</h6>
           <p class="d-flex"><i class="fas fa-caret-right mr-3 pl-2 "></i>{{arrow[current]}}</p>
         </div>
       </transition>
     </div>
     <MyProject></MyProject>
+
   </div>
 </template>
 
@@ -23,7 +24,8 @@
 <style scoped lang="scss">
   $main-text-color: #64C7CC;
   $main-bg-color: rgb(10, 25, 47);
-
+  $secondary-text-color: rgb(136, 146, 176);
+  $third-text-color: #f7f7f7;
   @media only screen and (min-width: 576px) {
     .section-work__job:before {
       border-left: 3px solid #2c3e50;
@@ -31,6 +33,7 @@
 
     .current{
       border-left: 3px solid $main-text-color;
+      border-radius: 3px;
     }
 
   }
@@ -40,6 +43,7 @@
     }
     .current{
       border-bottom: 2px solid $main-text-color;
+      border-radius: 3px;
     }
   }
 
@@ -50,7 +54,7 @@
 
 .about {
   background: $main-bg-color;
-  color: darkgray;
+  color: $secondary-text-color;
   .section-work__title {
     position: absolute;
     top: -17px;
@@ -58,11 +62,12 @@
     background: $main-bg-color;
     z-index: 5;
     font-size: 22px;
-    color: white;
+    color:$third-text-color;
   }
   .section-work{
     border-top: 1px solid $main-text-color;
     position: relative;
+    border-radius: 2px;
     .section-work__job:before {
       content: "";
       position: absolute;
@@ -90,6 +95,7 @@
       color: $main-text-color;
       font-weight: bold;
       z-index: 15;
+      border-radius: 3px;
     }
     .fas {color: $main-text-color;}
   }
