@@ -1,19 +1,21 @@
 <template>
-  <div class="about padding">
-    <div class="row section-work mx-auto mt-3 ">
-      <div class="section-work__title mx-0 pl-0 pr-3">
-        <span class="pr-3">02.</span>Where i've worked
-      </div>
-      <div class="col-12 section-work__job d-flex justify-content-between col-sm-2 flex-sm-column px-0 m-0 pt-3">
-        <div v-for="(name, i) in stuff" @click="current = i" :class="{current:i == current}" :key="name.id" ><div class="col section-work__name" @click="animate">{{name}}</div></div>
-      </div>
-      <transition name="bounce">
-        <div class="col-sm-5 pt-4" :class="{'bounceInRight animated': animated}" @animationend="animated = false">
-          <h5 class="third-text-color">{{macarie[current]}} <span>@ {{stuff[current]}}</span></h5>
-          <h6 class="secondary-text-color">{{perioada[current]}}</h6>
-          <p class="d-flex"><i class="fas fa-caret-right mr-3 pl-2 "></i>{{arrow[current]}}</p>
+  <div class="about ">
+    <div class="col-sm-10 px-0  mx-auto col-md-8 col-lg-6 col-xl-4 my-5 py-5" id="experience">
+      <div class="row section-work mx-2 ">
+        <div class="section-work__title  second-text-size pr-4  ">
+          <span class="pr-3 ">02.</span>Where i've worked
         </div>
-      </transition>
+        <div class="col-12 section-work__job d-flex justify-content-between col-sm-3 flex-sm-column ">
+          <div v-for="(name, i) in stuff" @click="current = i" :class="{current:i == current}" :key="name.id" ><div class="col-sm section-work__name" @click="animate">{{name}}</div></div>
+        </div>
+        <transition name="bounce">
+          <div class="col-sm-8 mt-3 mt-sm-5" :class="{'bounceInRight animated': animated}" @animationend="animated = false">
+            <h5 class="third-text-color">{{macarie[current]}} <span>@ {{stuff[current]}}</span></h5>
+            <h6 class="secondary-text-color">{{perioada[current]}}</h6>
+            <p class="d-flex"><i class="fas fa-caret-right mr-3 pl-2 my-auto"></i>{{arrow[current]}}</p>
+          </div>
+        </transition>
+      </div>
     </div>
     <MyProject></MyProject>
 
@@ -27,47 +29,67 @@
   $secondary-text-color: rgb(136, 146, 176);
   $third-text-color: #f7f7f7;
   @media only screen and (min-width: 576px) {
-    .section-work__job:before {
-      border-left: 3px solid #2c3e50;
-    }
 
-    .current{
-      border-left: 3px solid $main-text-color;
-      border-radius: 3px;
+    .about {
+      padding-top: 70px;
+      .section-work{
+        .section-work__job:before {
+          border-left: 3px solid #2c3e50;
+        }
+        .section-work__job{
+          margin-top: 40px;
+          padding: 0;
+          .section-work__name {
+            font-size: 15px;
+            font-weight: bold;
+          }
+          .current{
+            border-left: 3px solid $main-text-color;
+            border-radius: 3px;
+          }
+        }
+        h5{font-size: 15px}
+        h6{font-size: 15px}
+        p {font-size: 20px}
+      }
     }
 
   }
   @media only screen and (max-width: 575px) {
-    .section-work__name {
-      font-size: 12px;
+  .section-work{
+    .section-work__job{
+      margin-top: 40px;
+      .section-work__name {
+        font-size: 9px;
+        font-weight: bold;
+      }
+      .current{
+        border-bottom: 2px solid $main-text-color;
+        border-radius: 3px;
+      }
+
     }
-    .current{
-      border-bottom: 2px solid $main-text-color;
-      border-radius: 3px;
-    }
+    h5{font-size: 15px}
+    h6{font-size: 13px}
+    p {font-size: 11px}
   }
-
-
-
-
-
+  }
 
 .about {
   background: $main-bg-color;
   color: $secondary-text-color;
-  .section-work__title {
-    position: absolute;
-    top: -17px;
-    left: 0;
-    background: $main-bg-color;
-    z-index: 5;
-    font-size: 22px;
-    color:$third-text-color;
-  }
   .section-work{
     border-top: 1px solid $main-text-color;
     position: relative;
     border-radius: 2px;
+    .section-work__title {
+      position: absolute;
+      top: -17px;
+      left: 0px;
+      background: $main-bg-color;
+      z-index: 5;
+      color:$third-text-color;
+    }
     .section-work__job:before {
       content: "";
       position: absolute;
@@ -75,7 +97,6 @@
       top: 0;
       width: 100%;
       height: 100%;
-
     }
     .section-work__job {
       div {

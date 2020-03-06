@@ -1,14 +1,14 @@
 <template>
   <div class="home">
     <div class="padding">
-      <div class="streak-left"></div>
-      <div class="streak-right"></div>
-      <ul class="media-left text-left p-0">
+      <div class="streak-left d-none d-lg-flex"></div>
+      <div class="streak-right d-none d-lg-flex"></div>
+      <ul class="media-left text-left p-0 d-none d-lg-block">
         <li><a href=""><i class="fab fa-github"></i></a></li>
         <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
         <li><a href=""><i class="fab fa-instagram"></i></a></li>
       </ul>
-      <div class="email-right secondary-text-color d-block">talexandrugeorge@gmail.com</div>
+      <div class="email-right secondary-text-color d-none d-lg-block">talexandrugeorge@gmail.com</div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><div class="hexagon"><span>T</span></div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,16 +22,16 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
           <ul class="navbar-nav ">
             <li class="nav-item">
-              <a class="nav-link" href="#/"><span>01.</span> About <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#about"><span>01.</span> About <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#/"><span>02.</span> Experience</a>
+              <a class="nav-link" href="#experience"><span>02.</span> Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#/"><span>03.</span> Work</a>
+              <a class="nav-link" href="#work"><span>03.</span> Work</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#/"><span>04.</span> Contact</a>
+              <a class="nav-link" href="#contact"><span>04.</span> Contact</a>
             </li>
           </ul>
           <form class="form my-2 my-lg-0">
@@ -39,43 +39,43 @@
           </form>
         </div>
       </nav>
-      <div class="col section-name mt-5 mx-auto">
+      <div class="col-sm  section-name col-lg-7  mx-auto text-center">
         <p class="main-text-color">Hi, my name is</p>
-        <p class="third-text-color">Alexandru Tabara</p>
-        <p class="secondary-text-color ">I build things for the web</p>
+        <p class="third-text-color text-size">Alexandru Tabara</p>
+        <p class="secondary-text-color second-text-size">I build things for the web</p>
         <p class="my-3 secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi blanditiis dicta, dolores fuga minima recusandae rerum sit suscipit totam. Aperiam commodi dolor ducimus eius enim maxime nam nisi officia pariatur quidem, quisquam rerum sequi, suscipit tenetur voluptatem? Doloremque, nisi!</p>
         <button class="btn my-3">Get in Touch</button>
       </div>
-      <div class="col mx-auto section-about mt-5">
-        <div class="section-about__title"><span class="pr-3">01</span>About me</div>
+      <div class="col-sm col-lg-10 mx-auto section-about align-middle mt-5" id="about">
+        <div class="section-about__title second-text-size"><span class="pr-3">01</span>About me</div>
         <div class="section-about__description d-block">
-          <div class="col pt-3 px-0">
+          <div class="col-sm px-0">
             <p class="secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci earum laboriosam magni reprehenderit veniam? Consectetur cum incidunt ipsa iste laborum modi necessitatibus repellat! Deserunt iure mollitia quis quos repudiandae veniam!</p>
             <p class="secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam aliquid culpa deserunt dicta distinctio dolor dolore dolorem ea eligendi eos fugiat id illum ipsam iste magnam modi nemo nesciunt obcaecati officiis, perspiciatis quae quibusdam quidem quo ratione reiciendis rem reprehenderit repudiandae sed sequi, tempore velit voluptate. Est, exercitationem?</p>
             <p class="secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur deserunt esse facere hic laudantium nam quas qui, quisquam rerum sed sequi suscipit veniam, veritatis.</p>
-            <div class="row progress-barcss d-flex">
-              <div class="col-sm parinte">
-                <h5>Utilitare</h5>
+            <div class="row progress-barcss d-flex mt-md-5">
+              <div class="col-sm-12 col-md-6  section-about__skills ">
+                <h5>Standard language & Web Design</h5>
                 <div><i class="fas fa-caret-right"></i> HTML <i class="fab fa-html5"></i></div>
                 <div><i class="fas fa-caret-right"></i> CSS <i class="fab fa-css3-alt"></i></div>
                 <div><i class="fas fa-caret-right"></i> Sass <i class="fab fa-sass"></i></div>
                 <div><i class="fas fa-caret-right"></i> WordPress <i class="fab fa-wordpress"></i></div>
               </div>
-              <div class="col-sm parinte">
+              <div class="col-sm-12 col-md-6  section-about__skills">
                 <h5>FrameWork</h5>
                 <div><i class="fas fa-caret-right"></i> VueJS <i class="fab fa-vuejs"></i></div>
                 <div><i class="fas fa-caret-right"></i> React <i class="fab fa-react"></i></div>
                 <div><i class="fas fa-caret-right"></i> Angular <i class="fab fa-angular"></i></div>
                 <div><i class="fas fa-caret-right"></i> BootStrap4 <i class="fab fa-bootstrap"></i></div>
               </div>
-              <div class="col-sm parinte">
+              <div class="col-sm-12 col-md-6 section-about__skills">
                 <h5>Tools</h5>
                 <div><i class="fas fa-caret-right"></i> Adobe Creative Cloud <i class="fab fa-adobe"></i></div>
                 <div><i class="fas fa-caret-right"></i> BEM <i class="fas fa-ethernet"></i></div>
                 <div><i class="fas fa-caret-right"></i> BuildPack <i class="fas fa-boxes"></i></div>
                 <div><i class="fas fa-caret-right"></i> GitHub <i class="fab fa-github-square"></i></div>
               </div>
-              <div class="col-sm parinte">
+              <div class="col-sm-12 col-md-6 section-about__skills">
                 <h5>Source Code Editor</h5>
                 <div><i class="fas fa-caret-right"></i> PhpStorm </div>
                 <div><i class="fas fa-caret-right"></i> Sublime Text 3</div>
@@ -84,18 +84,13 @@
               </div>
             </div>
           </div>
-          <div class="d-flex justify-content-center mt-4">
-            <div class="img-home text-center d-none d-xl-flex">
-              <img class="mt-3" src="../assets/png-img.png" alt="">
-            </div>
-          </div>
         </div>
 
       </div>
       <About></About>
     </div>
     <div class="srct-contact">
-      <div class="col-sm-2 mx-auto secondary-text-color">
+      <div class="col-sm text-center secondary-text-color">
         <p>Design & Build by Alexandru Tabara</p>
       </div>
     </div>
@@ -107,17 +102,35 @@
   $main-bg-color: rgb(10, 25, 47);
   $secondary-text-color: rgb(136, 146, 176);
   $third-text-color: #f7f7f7;
+  .text-size { font-size: 60px; font-weight: bold}
+  .second-text-size {font-size: 25px;font-weight: bold}
   .main-text-color {color: $main-text-color;}
   .secondary-text-color {color: rgb(136, 146, 176)}
   .third-text-color {color: $third-text-color}
   span {color: $main-text-color;}
   .padding {padding: 0 5px}
   .btn {color: $main-text-color;border: 2px solid $main-text-color;background: $main-bg-color;}
+  .btn:hover{
+    color: $main-text-color;
+  }
+  .btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+    outline: 0
+  }
 
   @media only screen and (min-width: 576px) {
     .padding {padding: 0 50px}
   }
   @media only screen and (max-width: 575px) {
+  }
+  @media only screen and (min-width: 992px) {
+    .text-size { font-size: 55px; font-weight: bold}
+    .second-text-size {font-size: 25px;font-weight: bold}
+  }
+  @media only screen and (max-width: 992px) {
+    .text-size { font-size: 33px; font-weight: bold}
+    .second-text-size {font-size: 20px;font-weight: bold}
   }
 
 
@@ -132,7 +145,6 @@
       width: 2px;
       background: $secondary-text-color;
     }
-
     .streak-right{
       position: fixed;
       bottom: 0;
@@ -142,7 +154,6 @@
       background: $secondary-text-color;
     }
     .media-left{
-      display: block;
       position: fixed;
       top: calc(100vh - 40vh);
       left: 30px;
@@ -157,7 +168,7 @@
             font-size: 20px;
             color: $third-text-color;
             background: $main-bg-color;
-            margin: 20px 0;
+            margin: 30px 0;
             cursor: pointer;
           }
         }
@@ -230,7 +241,8 @@
         .hamburger-menu {
           width: 30px;
           height: 40px;
-          .section-about__title {
+          color: $main-text-color;
+          div {
             width: 30px;
             height: 4px;
             background: $main-text-color;
@@ -243,9 +255,52 @@
           color: $main-text-color;
         }
         a{
+          color: $third-text-color;
         }
       }
     }
+
+
+    /* SECTION_NAME*/
+
+    @media only screen and (min-width: 992px) {
+      .section-name{
+        padding: 250px 0;}
+    }
+    @media only screen and (max-width: 992px) {
+      .section-name{margin: 30px 0}
+    }
+    .section-name{}
+
+    /* SECTION_ABOUT*/
+
+    @media only screen and (min-width: 992px) {
+      .section-about{
+        .progress-barcss {
+          .section-about__skills{
+            margin-top: 10px;
+            div {
+              margin: 12px 0;
+            }
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 992px) {
+      .section-about{
+        margin: 30px 0;
+        .progress-barcss {
+          padding-top: 10px;
+          .section-about__skills{
+            padding-top: 10px;
+            div {
+              margin-bottom: 12px;
+            }
+          }
+        }
+      }
+    }
+
     .section-about {
       .section-about__title{
         color: $third-text-color;
@@ -253,28 +308,34 @@
       .section-about__description {
         position: relative;
         .progress-barcss {
-          .parinte:nth-child(1) div:nth-child(2):before{width: 91%;}
-          .parinte:nth-child(1) div:nth-child(3):before{width: 73%;}
-          .parinte:nth-child(1) div:nth-child(4):before{width: 69%;}
-          .parinte:nth-child(1) div:nth-child(5):before{width: 56%;}
+          .section-about__skills:nth-child(1) div:nth-child(2):before{width: 91%;}
+          .section-about__skills:nth-child(1) div:nth-child(3):before{width: 73%;}
+          .section-about__skills:nth-child(1) div:nth-child(4):before{width: 69%;}
+          .section-about__skills:nth-child(1) div:nth-child(5):before{width: 36%;}
 
-          .parinte:nth-child(2) div:nth-child(2):before{width: 21%;}
-          .parinte:nth-child(2) div:nth-child(3):before{width: 10%;}
-          .parinte:nth-child(2) div:nth-child(4):before{width: 14%;}
-          .parinte:nth-child(2) div:nth-child(5):before{width: 5%;}
+          .section-about__skills:nth-child(2) div:nth-child(2):before{width: 21%;}
+          .section-about__skills:nth-child(2) div:nth-child(3):before{width: 8%;}
+          .section-about__skills:nth-child(2) div:nth-child(4):before{width: 12%;}
+          .section-about__skills:nth-child(2) div:nth-child(5):before{width: 55%;}
 
-          .parinte:nth-child(3) div:nth-child(2):before{width: 21%;}
-          .parinte:nth-child(3) div:nth-child(3):before{width: 10%;}
-          .parinte:nth-child(3) div:nth-child(4):before{width: 14%;}
-          .parinte:nth-child(3) div:nth-child(5):before{width: 5%;}
+          .section-about__skills:nth-child(3) div:nth-child(2):before{width: 21%;}
+          .section-about__skills:nth-child(3) div:nth-child(3):before{width: 56%;}
+          .section-about__skills:nth-child(3) div:nth-child(4):before{width: 78%;}
+          .section-about__skills:nth-child(3) div:nth-child(5):before{width: 25%;}
 
-          .parinte:nth-child(4) div:nth-child(2):before{width: 21%;}
-          .parinte:nth-child(4) div:nth-child(3):before{width: 10%;}
-          .parinte:nth-child(4) div:nth-child(4):before{width: 14%;}
-          .parinte:nth-child(4) div:nth-child(5):before{width: 5%;}
+          .section-about__skills:nth-child(4) div:nth-child(2):before{width: 61%;}
+          .section-about__skills:nth-child(4) div:nth-child(3):before{width: 70%;}
+          .section-about__skills:nth-child(4) div:nth-child(4):before{width: 94%;}
+          .section-about__skills:nth-child(4) div:nth-child(5):before{width: 55%;}
 
-          .parinte{
+          .section-about__skills{
             color: $third-text-color;
+            h5 { font-size: 18px}
+            .fab,.fa-boxes, .fa-ethernet{
+              font-size: 20px;
+              color: $third-text-color;
+              padding-left: 10px;
+            }
             div:nth-child(n):before{
               content: "";
               bottom: -3px;
@@ -282,6 +343,9 @@
               height: 2px;
               position: absolute;
               background: $main-text-color;
+            }
+            div:hover .fab {
+              color: $main-text-color;
             }
             div{
               color: $secondary-text-color;
@@ -291,33 +355,6 @@
             }
           }
         }
-        .img-home:hover:before {
-          top: 0;
-          left: 0;
-          transition: ease-in-out 0.8s;
-        }
-        .img-home:before {
-          content: "";
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background: transparent;
-          border: 3px solid $main-text-color;
-
-
-        }
-        .img-home {
-          position: relative;
-          height: 180px;
-          width: 180px;
-          img {
-            width: 150px;
-            height: 150px;
-          }
-        }
-
       }
     }
   }
