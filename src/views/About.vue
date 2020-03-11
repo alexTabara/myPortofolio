@@ -1,7 +1,7 @@
 <template>
-  <div class="about ">
-    <div class="col-sm-10 px-0  mx-auto col-md-8 col-lg-6 col-xl-4 my-5 py-5" id="experience">
-      <div class="row section-work mx-2 ">
+  <div class="about">
+    <div class="col-sm-10 px-0  mx-auto col-md-10 col-lg-7 col-xl-6 my-auto" id="experience">
+      <div class="row section-work mx-2">
         <div class="section-work__title  second-text-size pr-4  ">
           <span class="pr-3 ">02.</span>Where i've worked
         </div>
@@ -9,7 +9,7 @@
           <div v-for="(name, i) in stuff" @click="current = i" :class="{current:i == current}" :key="name.id" ><div class="col-sm section-work__name" @click="animate">{{name}}</div></div>
         </div>
         <transition name="bounce">
-          <div class="col-sm-8 mt-3 mt-sm-5" :class="{'bounceInRight animated': animated}" @animationend="animated = false">
+          <div class="col-sm-9 mt-3 mt-sm-5" :class="{'bounceInRight animated': animated}" @animationend="animated = false">
             <h5 class="third-text-color">{{macarie[current]}} <span>@ {{stuff[current]}}</span></h5>
             <h6 class="secondary-text-color">{{perioada[current]}}</h6>
             <p class="d-flex"><i class="fas fa-caret-right mr-3 pl-2 my-auto"></i>{{arrow[current]}}</p>
@@ -18,7 +18,6 @@
       </div>
     </div>
     <MyProject></MyProject>
-
   </div>
 </template>
 
@@ -31,7 +30,11 @@
   @media only screen and (min-width: 576px) {
 
     .about {
-      padding-top: 70px;
+      padding-top: 20px;
+      #experience{
+        height: 50vh;
+        padding-top: 20vh;
+      }
       .section-work{
         .section-work__job:before {
           border-left: 3px solid #2c3e50;
@@ -60,7 +63,7 @@
     .section-work__job{
       margin-top: 40px;
       .section-work__name {
-        font-size: 9px;
+        font-size: 15px;
         font-weight: bold;
       }
       .current{
@@ -73,6 +76,10 @@
     h6{font-size: 13px}
     p {font-size: 11px}
   }
+  }
+  @media only screen and (max-width: 375px) {
+    .section-work__name {
+      font-size: 9px!important;}
   }
 
 .about {
@@ -142,10 +149,10 @@
         stuff:['Soft Dreams','Salul Negru','Jysk','Cora'],
         macarie:['Junior Web Developer','Manager Pensiune-Restaurant','Manager Logistica','Manager Comercial'],
         perioada:['January 2020 - Present','Iun 2019 - Sep 2019','Mai 2018 - Iun 2019','Dec 2006 - Aug 2017'],
-        arrow:['Junior Web Developer, sed do eiusmod ',
-          'giat nulla pariatur. Excepteur sint occa ',
-          't labore et dolore magna aliqua',
-          'bla bla bla bla gdgdgdsfsfsfssf'],
+        arrow:['Develop and maintain web applications using HTML, CSS,Sass & Bootstrap 4.',
+          'Targeting new markets to increase interest in the restaurant.',
+          'Conduct assessment of supply chain to identify risks and develop solutions useful in minimizing losses.',
+          'Manage and maintain the standard, custom, promotional, and large buy pricing within the pricing databases.'],
 
       }
     },

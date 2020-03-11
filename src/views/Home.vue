@@ -4,11 +4,11 @@
       <div class="streak-left d-none d-lg-flex"></div>
       <div class="streak-right d-none d-lg-flex"></div>
       <ul class="media-left text-left p-0 d-none d-lg-block">
-        <li><a href=""><i class="fab fa-github"></i></a></li>
-        <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+        <li><a target="_blank" href="https://github.com/alexTabara"><i class="fab fa-github"></i></a></li>
+        <li><a target="_blank" href="https://www.linkedin.com/in/tabara-alexandru-904805144/"><i class="fab fa-linkedin-in"></i></a></li>
         <li><a href=""><i class="fab fa-instagram"></i></a></li>
       </ul>
-      <div class="email-right secondary-text-color d-none d-lg-block">talexandrugeorge@gmail.com</div>
+      <div class="email-right secondary-text-color d-none d-lg-block"><a target="_blank" href="mailto:talexandrugeorge@gmail.com">talexandrugeorge@gmail.com</a></div>
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><div class="hexagon"><span>T</span></div></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -35,7 +35,7 @@
             </li>
           </ul>
           <form class="form my-2 my-lg-0">
-            <button class="btn  my-2 my-sm-0" type="submit">Resume</button>
+            <button class="btn  my-2 my-sm-0" type="submit"><a target="_blank" href="https://github.com/alexTabara">GitHub</a></button>
           </form>
         </div>
       </nav>
@@ -43,16 +43,15 @@
         <p class="main-text-color">Hi, my name is</p>
         <p class="third-text-color text-size">Alexandru Tabara</p>
         <p class="secondary-text-color second-text-size">I build things for the web</p>
-        <p class="my-3 secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam animi blanditiis dicta, dolores fuga minima recusandae rerum sit suscipit totam. Aperiam commodi dolor ducimus eius enim maxime nam nisi officia pariatur quidem, quisquam rerum sequi, suscipit tenetur voluptatem? Doloremque, nisi!</p>
-        <button class="btn my-3">Get in Touch</button>
+        <h6 class="my-3 secondary-text-color">I am a web developer based in Bucharest, specialized in building high-quality websites. </h6>
+        <button class="btn my-3"><a target="_blank" href="mailto:talexandrugeorge@gmail.com">Get in Touch</a></button>
       </div>
-      <div class="col-sm col-lg-10 mx-auto section-about align-middle mt-5" id="about">
+      <div class="col-sm col-lg-10 mx-auto section-about align-middle mt-5 d-flex flex-column justify-content-around" id="about">
         <div class="section-about__title second-text-size"><span class="pr-3">01</span>About me</div>
         <div class="section-about__description d-block">
           <div class="col-sm px-0">
-            <p class="secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci earum laboriosam magni reprehenderit veniam? Consectetur cum incidunt ipsa iste laborum modi necessitatibus repellat! Deserunt iure mollitia quis quos repudiandae veniam!</p>
-            <p class="secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci aliquam aliquid culpa deserunt dicta distinctio dolor dolore dolorem ea eligendi eos fugiat id illum ipsam iste magnam modi nemo nesciunt obcaecati officiis, perspiciatis quae quibusdam quidem quo ratione reiciendis rem reprehenderit repudiandae sed sequi, tempore velit voluptate. Est, exercitationem?</p>
-            <p class="secondary-text-color">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur deserunt esse facere hic laudantium nam quas qui, quisquam rerum sed sequi suscipit veniam, veritatis.</p>
+            <h5 class="secondary-text-color pt-2">I have spent the last months learning to code  and though challenging at times, it has been a highly rewarding experience.  </h5>
+            <h5 class="secondary-text-color">During these past months I developed an advanced training routine, called deep practice, allowing me to build an amazing skill set in the tech toolkit as Html, CSS and Bootstrap 4. And now I need to push myself, to advance from amateur stage to become and expert, to move forward, to innovate and open new avenues for others as well.</h5>
             <div class="row progress-barcss d-flex mt-md-5">
               <div class="col-sm-12 col-md-6  section-about__skills ">
                 <h5>Standard language & Web Design</h5>
@@ -71,8 +70,8 @@
               <div class="col-sm-12 col-md-6 section-about__skills">
                 <h5>Tools</h5>
                 <div><i class="fas fa-caret-right"></i> Adobe Creative Cloud <i class="fab fa-adobe"></i></div>
-                <div><i class="fas fa-caret-right"></i> BEM <i class="fas fa-ethernet"></i></div>
-                <div><i class="fas fa-caret-right"></i> BuildPack <i class="fas fa-boxes"></i></div>
+                <div><i class="fas fa-caret-right"></i> BEM </div>
+                <div><i class="fas fa-caret-right"></i> BuildPack</div>
                 <div><i class="fas fa-caret-right"></i> GitHub <i class="fab fa-github-square"></i></div>
               </div>
               <div class="col-sm-12 col-md-6 section-about__skills">
@@ -141,7 +140,7 @@
       position: fixed;
       bottom: 0;
       left: 40px;
-      height: 138px;
+      height: 14vh;
       width: 2px;
       background: $secondary-text-color;
     }
@@ -149,7 +148,7 @@
       position: fixed;
       bottom: 0;
       right: 40px;
-      height: 138px;
+      height: 14vh;
       width: 2px;
       background: $secondary-text-color;
     }
@@ -174,17 +173,21 @@
         }
       }
     }
-    .email-right:hover{
+    .email-right:hover a{
       color: $main-text-color;
       cursor: pointer;
+      text-decoration: none;
     }
     .email-right{
       position: fixed;
       top: calc(100vh - 40vh);
       right: 30px;
       writing-mode: vertical-rl;
+      a{
+        color: white;}
     }
     .navbar {
+      background: $main-bg-color;
       .navbar-brand {
         .hexagon {
           position: relative;
@@ -256,6 +259,7 @@
         }
         a{
           color: $third-text-color;
+          text-decoration: none;
         }
       }
     }
@@ -265,17 +269,18 @@
 
     @media only screen and (min-width: 992px) {
       .section-name{
-        padding: 250px 0;}
+        padding: 250px 0;
+        height: 93vh;}
     }
     @media only screen and (max-width: 992px) {
       .section-name{margin: 30px 0}
     }
-    .section-name{}
 
     /* SECTION_ABOUT*/
 
     @media only screen and (min-width: 992px) {
       .section-about{
+        height: 100vh;
         .progress-barcss {
           .section-about__skills{
             margin-top: 10px;
@@ -305,23 +310,24 @@
       .section-about__title{
         color: $third-text-color;
       }
+
       .section-about__description {
         position: relative;
         .progress-barcss {
-          .section-about__skills:nth-child(1) div:nth-child(2):before{width: 91%;}
-          .section-about__skills:nth-child(1) div:nth-child(3):before{width: 73%;}
-          .section-about__skills:nth-child(1) div:nth-child(4):before{width: 69%;}
-          .section-about__skills:nth-child(1) div:nth-child(5):before{width: 36%;}
+          .section-about__skills:nth-child(1) div:nth-child(2):before{width: 65%;}
+          .section-about__skills:nth-child(1) div:nth-child(3):before{width: 42%;}
+          .section-about__skills:nth-child(1) div:nth-child(4):before{width: 38%;}
+          .section-about__skills:nth-child(1) div:nth-child(5):before{width: 15%;}
 
-          .section-about__skills:nth-child(2) div:nth-child(2):before{width: 21%;}
-          .section-about__skills:nth-child(2) div:nth-child(3):before{width: 8%;}
-          .section-about__skills:nth-child(2) div:nth-child(4):before{width: 12%;}
-          .section-about__skills:nth-child(2) div:nth-child(5):before{width: 55%;}
+          .section-about__skills:nth-child(2) div:nth-child(2):before{width: 15%;}
+          .section-about__skills:nth-child(2) div:nth-child(3):before{width: 6%;}
+          .section-about__skills:nth-child(2) div:nth-child(4):before{width: 7%;}
+          .section-about__skills:nth-child(2) div:nth-child(5):before{width: 45%;}
 
-          .section-about__skills:nth-child(3) div:nth-child(2):before{width: 21%;}
-          .section-about__skills:nth-child(3) div:nth-child(3):before{width: 56%;}
-          .section-about__skills:nth-child(3) div:nth-child(4):before{width: 78%;}
-          .section-about__skills:nth-child(3) div:nth-child(5):before{width: 25%;}
+          .section-about__skills:nth-child(3) div:nth-child(2):before{width: 14%;}
+          .section-about__skills:nth-child(3) div:nth-child(3):before{width: 36%;}
+          .section-about__skills:nth-child(3) div:nth-child(4):before{width: 52%;}
+          .section-about__skills:nth-child(3) div:nth-child(5):before{width: 12%;}
 
           .section-about__skills:nth-child(4) div:nth-child(2):before{width: 61%;}
           .section-about__skills:nth-child(4) div:nth-child(3):before{width: 70%;}
@@ -364,6 +370,15 @@
       background-color: #0a0a0a;
       p:hover {
         color: $main-text-color;
+      }
+    }
+    .section-name {
+      a:hover {
+        color: $third-text-color;
+      }
+      a {
+        color: $main-text-color;
+        text-decoration: none;
       }
     }
 }
