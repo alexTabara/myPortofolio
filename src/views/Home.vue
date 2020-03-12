@@ -41,17 +41,17 @@
       </nav>
       <div class="col-sm  section-name col-lg-7  mx-auto text-center">
         <p class="main-text-color">Hi, my name is</p>
-        <p class="third-text-color text-size">Alexandru Tabara</p>
+        <p class="third-text-color text-size">Alexandru Tabara.</p>
         <p class="secondary-text-color second-text-size">I build things for the web</p>
-        <h6 class="my-3 secondary-text-color">I am a web developer based in Bucharest, specialized in building high-quality websites. </h6>
+        <h6 class="my-3 secondary-text-color">I am a web developper based in Bucharest, specialized in building high-quality websites. </h6>
         <button class="btn my-3"><a target="_blank" href="mailto:talexandrugeorge@gmail.com">Get in Touch</a></button>
       </div>
       <div class="col-sm col-lg-10 mx-auto section-about align-middle mt-5 d-flex flex-column justify-content-around" id="about">
         <div class="section-about__title second-text-size"><span class="pr-3">01</span>About me</div>
         <div class="section-about__description d-block">
           <div class="col-sm px-0">
-            <h5 class="secondary-text-color pt-2">I have spent the last months learning to code  and though challenging at times, it has been a highly rewarding experience.  </h5>
-            <h5 class="secondary-text-color">During these past months I developed an advanced training routine, called deep practice, allowing me to build an amazing skill set in the tech toolkit as Html, CSS and Bootstrap 4. And now I need to push myself, to advance from amateur stage to become and expert, to move forward, to innovate and open new avenues for others as well.</h5>
+            <h5 class="secondary-text-color pt-2">I have spent the last months learning to code  and even if it was difficult at first, it has been a highly rewarding experience.  </h5>
+            <h5 class="secondary-text-color">During these past months I developed an advanced training routine, called deep practice, allowing me to build an amazing skill set in the tech toolkit as Html, CSS and Bootstrap 4. And now I need to push myself, to advance from beginner stage to become and expert.</h5>
             <div class="row progress-barcss d-flex mt-md-5">
               <div class="col-sm-12 col-md-6  section-about__skills ">
                 <h5>Standard language & Web Design</h5>
@@ -89,8 +89,8 @@
       <About></About>
     </div>
     <div class="srct-contact">
-      <div class="col-sm text-center secondary-text-color">
-        <p>Design & Build by Alexandru Tabara</p>
+      <div class="col-sm text-center third-text-color">
+        <p>Build by Alexandru George Tabara</p>
       </div>
     </div>
   </div>
@@ -154,8 +154,8 @@
     }
     .media-left{
       position: fixed;
-      top: calc(100vh - 40vh);
-      left: 30px;
+      bottom: 26vh;
+      left: 32px;
       li:hover i{
         color: $main-text-color;
         transform: scale(1.2);
@@ -180,8 +180,8 @@
     }
     .email-right{
       position: fixed;
-      top: calc(100vh - 40vh);
-      right: 30px;
+      bottom: 28vh;
+      right: 28px;
       writing-mode: vertical-rl;
       a{
         color: white;}

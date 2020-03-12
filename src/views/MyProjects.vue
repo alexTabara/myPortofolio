@@ -1,8 +1,8 @@
 <template>
     <div class="project">
-        <div class="col-sm px-0 col-lg-10 mx-auto mt-5">
+        <div class="col-sm px-2 col-lg-10 mx-auto mt-5">
             <div class="row mx-0 second-text-size pt-5 third-text-color" id="work">
-                <span class="pr-3 ">03.</span>Some Things I've Build
+                <span class="pr-3">03.</span>Some Things I've Build
             </div>
             <div class="row section-project mx-0 mt-5">
                 <div class="col-sm  section-project__img section-project__img-left"></div>
@@ -47,7 +47,7 @@
                 <div class="col-sm-6  section-contact__title mx-auto  pr-3 text-center">
                     <span class="pr-3 second-text-size">04. What's Next?</span>
                     <p class="my-4">Get In Touch</p>
-                    <p>Although i'm not currently looking for freelance opportunities, my imbox is always open. Wheter for a potential project or just to say hi.</p>
+                    <p>Although i'm not currently looking for freelance opportunities, my inbox is always open. Wheter for a potential project or just to say hi.</p>
                     <div class="btn my-4"><a target="_blank" href="mailto:talexandrugeorge@gmail.com">Say Hello</a></div>
                 </div>
             </div>
